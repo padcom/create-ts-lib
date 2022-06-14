@@ -30,7 +30,10 @@ Default list of ignored files
 Contains version of node used when initializing the project
 
 ### `tsconfig.json`
-Default TypeScript documentation
+Default TypeScript configuration
+
+### `tsconfig.build.json`
+TypeScript configuration for the final build (excludes **/*test.*)
 
 ## Default scripts
 
