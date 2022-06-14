@@ -12,7 +12,7 @@ export class InitScriptsCommand extends Action {
       packageJson.version = '0.0.0'
       packageJson.main = 'dist/index.js'
       packageJson.types = 'dist/index.d.ts'
-      packageJson.scripts['build'] = 'tsc'
+      packageJson.scripts['build'] = 'tsc -p tsconfig.build.json'
     })
     println('ok')
 

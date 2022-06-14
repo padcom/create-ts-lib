@@ -9,6 +9,7 @@ export class InitTypeScriptCommand extends Action {
   async execute(options) {
     print('Initializing TypeScript...')
     await copyFile('tsconfig.json')
+    await copyFile('tsconfig.build.json')
     println('ok')
 
     return { typeScriptInitialized: true }
