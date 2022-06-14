@@ -26,7 +26,6 @@ const actions = [
   new WelcomeMessageCommand(),
   new Question('initGitRepo', `Would you like to initialize ${chalk.yellow('git')} repository in current folder?`),
   new InitGitRepositoryCommand(),
-  new Question('useLibFolder', `Would you like to use ${chalk.yellow('lib')} folder for sources?`),
   new InitNpmProjectCommand(),
   new InitScriptsCommand(),
   new InstallProjectDependenciesCommand(),

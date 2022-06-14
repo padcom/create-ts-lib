@@ -8,12 +8,8 @@ export class CreateApplicationFilesCommand extends Action {
 
   async execute(options) {
     print('Creating index.ts...')
-    if (options.useLibFolder) {
-      await mkdir('lib')
-      await copyFile('index.ts', `lib/index.ts`)
-    } else {
-      await copyFile('index.ts')
-    }
+    await mkdir('lib')
+    await copyFile('index.ts', `lib/index.ts`)
     println('ok')
 
     return { applicationFilesInitialized: true }

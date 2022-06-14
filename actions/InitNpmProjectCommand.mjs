@@ -13,6 +13,7 @@ export class InitNpmProjectCommand extends Action {
     const nodeVersion = await execute('node --version')
     const npmVersion = await execute('npm --version')
     withPackageJson(packageJson => {
+      packageJson.files = [ 'dist' ]
       packageJson.engines = {
         node: `>=${nodeVersion.trim()}`,
         npm: `>=${npmVersion.trim()}`,

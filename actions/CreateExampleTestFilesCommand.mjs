@@ -12,7 +12,7 @@ export class CreateExampleTestFilesCommand extends Action {
 
   async execute(options) {
     print('Creating example test...')
-    await copyFile('example.test.ts', `${options.useLibFolder ? 'lib/' : ''}example.test.ts`)
+    await copyFile('example.test.ts', 'lib/example.test.ts')
     println('ok')
 
     return { exampleTestsCreated: true }
