@@ -36,6 +36,10 @@ Default TypeScript documentation
 
 The following list describes the default NPM scripts that can be used with the project
 
+### `build`
+
+Builds the project, putting the generated files in `dist/`
+
 ### `test`
 
 Executes all tests in the project
