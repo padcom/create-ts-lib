@@ -13,6 +13,7 @@ export class InitScriptsCommand extends Action {
       packageJson.main = 'dist/index.js'
       packageJson.types = 'dist/index.d.ts'
       packageJson.scripts['build'] = 'tsc -p tsconfig.build.json'
+      packageJson.scripts['build:watch'] = 'npm run build -- --watch'
     })
     println('ok')
 
