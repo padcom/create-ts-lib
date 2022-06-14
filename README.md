@@ -1,4 +1,4 @@
-# Node.js app generator
+# Node.js lib generator
 
 This generator creates a project that has typescript and jest configured
 
@@ -9,13 +9,13 @@ To use this generator you need to have [nvm](https://github.com/nvm-sh/nvm#insta
 Then issue the following command:
 
 ```
-$ npm init @padcom/ts-app
+$ npm init @padcom/ts-lib
 ```
 
 Which will create the following elements:
 
-### `start.ts`
-This is the main application entry point. It can be invoked either directly or by calling `npm start`
+### `index.ts`
+This is the main library entry point
 
 ### `example.test.ts`
 This is an example Jest test written in TypeScript
@@ -35,27 +35,6 @@ Default TypeScript documentation
 ## Default scripts
 
 The following list describes the default NPM scripts that can be used with the project
-
-### `start`
-
-Starts the application by running
-
-```
-$ npm start
-```
-
-or
-
-```
-$ ./start.ts
-```
-
-or
-
-```
-$ npx ts-node start.ts
-```
-
 
 ### `test`
 
