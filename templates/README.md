@@ -2,7 +2,18 @@
 
 ## Starting the project
 
-To start the project issue the following command:
+To build the project issue the following command:
 ```
-$ nvm use && npm install && npm start
+$ nvm use && npm install && npm test && npm run build
 ```
+
+## Running tests
+
+To run tests execute the following command
+
+```
+$ npm test
+```
+
+To run the tests continuously 
+
