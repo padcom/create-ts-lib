@@ -1,0 +1,35 @@
+{
+  "name": "@padcom/create-ts-lib",
+  "version": "0.0.1",
+  "description": "NPM project generator for TypeScript library",
+  "keywords": [
+    "npm"
+  ],
+  "type": "module",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/padcom/create-ts-lib#readme",
+  "bugs": {
+    "url": "https://github.com/padcom/create-ts-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padcom/create-ts-lib.git"
+  },
+  "bin": {
+    "create-ts-app": "cli.js"
+  },
+  "scripts": {
+    "prepublishOnly": "npm install"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "inquirer": "^8.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "!win32"
+  ]
+}
